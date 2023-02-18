@@ -1,0 +1,384 @@
+/* header */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height: 130px;
+    background: rgba(16, 144, 216, 0.1);
+    border-radius: 8px;
+}
+
+.header .h-1 {
+    padding-left: 50px;
+}
+
+.header .h-1 h1 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 45px;
+    color: rgba(17, 17, 17, 0.8);
+}
+
+.header .h-1 p {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    letter-spacing: 0.05em;
+    color: rgba(17, 17, 17, 0.6);
+}
+
+.header .h-2 {
+    padding-right: 50px;
+}
+
+.header .h-2 button {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    color: #FFFFFF;
+    width: 120px;
+    height: 48px;
+    background: #1090D8;
+    border-radius: 8px;
+    border: none;
+}
+
+/* main */
+.total-area {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 26px 0px;
+}
+
+.calcutation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 75%;
+    gap: 1rem;
+}
+
+.result {
+    width: 24%;
+    background: #FFFFFF;
+    border: 1px solid rgba(17, 17, 17, 0.1);
+    border-radius: 8px;
+    min-height: 450px;
+    position: relative;
+}
+
+.result h6 {
+    text-align: center;
+    text-decoration: underline;
+    font-size: 22px;
+    margin: 0px auto;
+}
+
+.calcutation .box {
+    width: 360px;
+    height: 563px;
+    text-align: center;
+    padding-top: 66px;
+    border: 1px solid rgba(17, 17, 17, 0.1);
+    border-radius: 8px;
+}
+
+.calcutation .box h5 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 30px;
+    text-align: center;
+    color: #414141;
+    margin-top: 13px;
+}
+
+.calcutation .box p {
+    color: #414141;
+    margin-top: 22px;
+    font-size: 22px;
+}
+
+.calcutation .box img {
+    width: 243px;
+    height: 194px;
+}
+
+.calcutation .box form {
+    height: 32px;
+    margin: 37px auto;
+}
+
+.calcutation .box form input {
+    width: 110px;
+    height: 32px;
+    padding-left: 9px;
+    background: #F1F1F1;
+    border-radius: 4px;
+    border: none;
+}
+
+.calcutation .box button {
+    width: 338px;
+    height: 56px;
+    background: #1090D8;
+    border-radius: 8px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: #FFFFFF;
+    border: none;
+}
+
+/* Convat */
+.Convat {
+    font-style: normal;
+    text-align: center;
+    color: #FFFFFF;
+    width: 134px;
+    height: 38px;
+    background-color: #1090D8;
+    border-radius: 4px;
+    border: none;
+}
+
+#Show {
+    padding: 11px 0px 0px 33px;
+    line-height: 37px;
+    width: 100%;
+}
+
+ol li {
+    margin: 15px 0px;
+}
+
+#new-page {
+    width: 100%;
+    display: none;
+}
+
+#new-page .Close-butn {
+    width: 188px;
+    margin: 18px auto;
+    float: right;
+    background-color: red;
+    height: 38px;
+    border-radius: 4px;
+    color: white;
+    border: none;
+}
+
+#convat-value {
+    width: 100%;
+    background-color: #cbbab7;
+    height: 100vh;
+    display: none;
+    background-image: url(../img/ocean-3605547_960_720.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.convat div {
+    font-size: 65px;
+    line-height: 95px;
+    color: white;
+    text-shadow: 4px 3px 5px red;
+    font-weight: 700;
+}
+
+.convat {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+#convat-value button {
+    width: 175px;
+    height: 43px;
+    font-size: 20px;
+    background-color: red;
+    border: none;
+    border-radius: 4px;
+    transition: all .5s ease;
+    color: white;
+}
+
+#convat-value button:hover {
+    background-color: #2447b9;
+}
+
+
+/* media */
+@media (min-width: 200px) and (max-width: 576px) {
+    .calcutation {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 100%;
+        gap: 1rem;
+    }
+
+    .result {
+        width: 100%;
+        text-align: center;
+    }
+
+    .header .h-1 {
+        width: 70%;
+        padding-left: 10px;
+    }
+
+    .header .h-2 {
+        width: 30%;
+    }
+
+    .header .h-2 button {
+        width: 84px;
+    }
+
+    .header .h-1 p {
+        font-size: 20px;
+    }
+
+    .header .h-1 h1 {
+        font-size: 35px;
+
+    }
+
+    .Convat {
+        width: 134px;
+    }
+
+    .convat div {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .convat {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: unset;
+        flex-direction: column;
+    }
+
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+    .calcutation {
+        width: 100%;
+
+    }
+
+    .convat {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: unset;
+        flex-direction: column;
+    }
+
+    .convat div {
+        font-size: 38px;
+        text-align: center;
+    }
+
+    .result {
+        width: 100%;
+        text-align: center;
+
+    }
+
+    .Convat {
+        width: 134px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+    .calcutation {
+        width: 50%;
+
+    }
+
+    .convat {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: unset;
+        flex-direction: column;
+    }
+
+    .result {
+        width: 42%;
+
+    }
+
+    .Convat {
+        width: 134px;
+    }
+}
+
+@media (min-width: 993px) and (max-width: 1200px) {
+    .calcutation {
+        width: 100%;
+
+    }
+
+    .result {
+        width: 100%;
+        text-align: center;
+
+    }
+
+    .Convat {
+        width: 134px;
+    }
+}
+
+@media (min-width: 1201px) and (max-width: 1577px) {
+    .result {
+        width: 25%;
+
+    }
+
+    .calcutation {
+        width: 71%;
+
+    }
+
+    .Convat {
+        width: 134px;
+    }
+}
